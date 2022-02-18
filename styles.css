@@ -1,0 +1,174 @@
+/*--
+
+    Description: Styles for HTML section of all PHP files.
+
+--*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: #D4D4D4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+main {
+    width: auto;
+    margin: 0px 0px;
+    padding: 10px;
+    background: #F7F7F7;
+    border: 1px solid #A0A0A0;
+    box-shadow: 1px 1px 3px #CFCFCF, -1px 1px 3px #CFCFCF;
+    border-radius: 8px;
+}
+
+header {
+    background: #E2E2E2;
+    box-shadow: 1px 0px 2px #333, -1px 0px 2px #333;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+    header h1 a {
+        text-decoration: none;
+        color: #333;
+    }
+
+#logo {
+    margin: 10px 10px;
+    float: left;
+}
+
+    nav ul{
+        margin: 10px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+        nav ul li{
+            box-shadow: 1px 0px 2px #333, -1px 0px 2px #333;
+            border-radius: 5px;
+            background-color: #DCDCDC;
+            line-height: 40px;
+            width: 150px;
+            text-align: center;
+            margin: 0px 5px;
+        }
+
+        nav ul li:hover, nav ul li a:focus{
+            background-color: #DCDCDC;
+        }
+
+            nav ul li a{
+                color: #333;
+                text-decoration: none;
+                text-shadow: 1px 1px 2px #FFF;
+                transition: 0.5s;
+                text-transform: uppercase;
+                font-size: 1.4em;
+                font-weight: bold;
+            }
+
+            nav ul li a:hover, nav ul li:focus{
+                color: #00CED1;
+                text-shadow: 1px 1px 2px #222;
+            }
+
+#all_blogs {
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 1px 0px 2px #333, -1px 0px 2px #333;
+    border-radius: 5px 5px;
+    background: #EFEFEF;
+}
+
+    #all_blogs h1 {
+        color: red;
+        margin-bottom: 30px;
+    }
+
+    #all_blogs p {
+        margin: 10px 0px;
+    }
+
+    #all_blogs a {
+        color: blue;
+    }
+
+    .blog_title h2 {
+        color: blue;
+    }
+
+        .blog_title h2 a {
+            text-decoration: none;
+            color: blue;
+        }
+
+.timestamp {
+    font-size: 12px;
+    font-style: italic;
+}
+
+    .timestamp a {
+        color: blue;
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 13px;
+    }
+
+.blog_content {
+    margin: 15px 0px;
+}
+
+#form {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+}
+
+#title {
+    width: 40%;
+    height: 20px;
+    margin: 5px 0px 20px 0px;
+    border: 1px solid #A0A0A0;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    margin: 5px 0px;
+    border: 1px solid #A0A0A0;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.submit {
+    padding: 5px 5px;
+    margin-right: 5px;
+    border: 1px #555 solid;
+    font-size: 15px;
+}
+
+.submit:hover{
+    box-shadow: 2px 2px 1px #555;
+    cursor: pointer;
+    background-color: #AFEEEE;
+}
+
+/*************************************/
+@media(min-width: 870px){
+    main{
+        margin: 10px 200px;
+    }
+}
